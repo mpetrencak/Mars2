@@ -21,6 +21,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
     <ImageView
+        app:imageUrl="@{viewModel.property.imgSrcUrl}"
         android:id="@+id/mars_image"
         android:layout_width="match_parent"
         android:layout_height="170dp"
@@ -28,4 +29,10 @@
         android:adjustViewBounds="true"
         android:padding="2dp"
         tools:src="@tools:sample/backgrounds/scenic"/>
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.android.marsrealestate.overview.OverviewViewModel" />
+    </data>
 </layout>
